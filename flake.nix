@@ -29,7 +29,9 @@
           {
             playerConfig = {
               webserver = (import nixpkgs { inherit system; }).hello;
-              sshKey = "<YOUR_PUBLIC_SSH_KEY>";
+              sshKey = "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIIo+ulCUfJjnCVgfM4946Ih5Nm8DeZZiayYeABHGPEl7";
+              githubLogin = "jfroche";
+              githubRepo = "nixcon-2024-player-template";
             };
           }
         ];
