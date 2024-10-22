@@ -50,7 +50,7 @@ in
       };
       serviceConfig = {
         DynamicUser = true;
-        ExecStartPre = "${lib.getExe pkgs.curl} -v --retry 3 --retry-delay 0 --retry-all-errors --fail -X POST ${cfg.gameServerUrl}/register/${cfg.githubLogin}/${cfg.githubRepo}";
+        ExecStartPre = "${lib.getExe pkgs.curl} -v --retry 10 --retry-delay 0 --retry-all-errors --fail -X POST ${cfg.gameServerUrl}/register/${cfg.githubLogin}/${cfg.githubRepo}";
       };
     };
 

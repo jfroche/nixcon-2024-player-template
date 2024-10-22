@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "garnix"
+version = "0.1.0"
+description = ""
+authors = ["jfroche"]
+packages = [{ include = "garnix" }]
+
+[tool.poetry.dependencies]
+python = "^3.12"
+fastapi = { extras = ["standard"], version = "^0.112.0"}
+structlog = "^23.2.0"
+uvicorn = { extras = ["standard"], version = "^0.25.0" }
+
+[tool.poetry.scripts]
+garnix = "garnix.main:start"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
