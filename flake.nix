@@ -48,7 +48,7 @@
               enable = true;
               port = 8081;
             };
-            services.nginx.virtualHosts.default.locations."/hoogle".proxyPass = "http://127.0.0.1:8081";
+            services.nginx.virtualHosts.default.locations."/hoogle/".proxyPass = "http://127.0.0.1:8081/";
           }
         ];
       };
